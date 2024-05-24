@@ -2,8 +2,8 @@
 
 $name = $_POST["name"]; 
 $from = $_POST["email"]; 
-$subject = "Wiadomość z formularza na stronie zlwop.pl";
-$to = "kontakt@zlwopr.pl"; 
+$subject = "Wiadomość z formularza na stronie corgi-odstasiakow.pl";
+$to = "kontakt@corgi-odstasiakow.pl"; 
 $message = $_POST["msg"]; 
 
 $txt = "Imię: " . $name . "\r\n" . "Email: " . $from . "\r\n" . "\r\n" . "Treść: " . $message;
@@ -16,7 +16,7 @@ $headers .= "Reply-To: " . $from . "\r\n";
 $mail_status = mail($to, $subject, $txt, $headers);
 
 if ($mail_status) {
-    header("Location: https://stac4uo.github.io/wopr2.0/index.html?mail_status=sent"); 
+    header("Location: https://corgi-odstasiakow.pl/pages/msgSend/index.html"); 
 } else {
-    header("Location: https://stac4uo.github.io/wopr2.0/index.html?mail_status=error"); 
+    header("Location: https://corgi-odstasiakow.pl/404.html"); 
 }

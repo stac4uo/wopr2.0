@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt Z-Ł WOPR</title>
+         <link rel="canonical" href="https://zlwopr.pl/kontakt/">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/mail.css">
+</head>
+
+<body class=" flex flex-col  justify-center items-center gap-14  ">
+
+
+    <header class=" w-[95%] mt-4 md:w-[90%] ">
+        <nav class=" h-20 w-full  flex items-center justify-between gap-4">
+
+            <a href="../index.html"class="h-20 px-4"><img class="h-full"  src="../img/logwopr.png" alt="Logo"></a>
+            <ul id="nav-mobile" class="   flex justify-end gap-4 ">
+                <li><a href="../index.html"> <span class=""><b>Strona Główna</b> </span></a></li>
+
+                
+            </ul>
+            </div>
+        </nav>
+    </header>
+
+<section class="max-w-screen-md">
+    
+    <p class="msg-status "></p>
+    <form action="php/mail.php" method="post" class="contact-form">
+
+        <div class="contact-box">
+          <label for="name">Imię:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="contact-box">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="contact-box">
+          <label for="msg">Wiadomość:</label>
+          <textarea name="msg" id="msg" required></textarea>
+        </div>
+
+        <p class="text-xs font-bold my-4">
+            * Klikając przycisk "wyślij" wyrażasz zgodę na przetwarzanie Twoich
+            danych osobowych podanych w powyższym formularzu w celach handlowych
+            i marketingowych przez Zgiersko-Łęczyckie Pogotowie Ratunkowe oraz przez podmioty
+            trzecie, zgodnie z przepisami ogólnego rozporządzenia o ochronie
+            danych (RODO).
+        </p>
+    
+        <button class="bg-slate-300 ">Wyślij</button>
+    
+      </form>
+    
+      
+       
+       
+</section>
+
+    <footer id="kontakt" class="bg-gray-700 text-white flex flex-col items-center gap-4 pt-4 w-[100%] max-w-screen-2xl ">
+        <h5 class="white-text center-align flow-text">Kontakt</h5>
+        <p class="text-center">Zgiersko - Łęczyskie Wodne Ochotnicze
+            Pogotowie Ratunkowe </p>
+        <p class="white-text text-lighten-4">95-035 Ozorków ul. Lotnicza 1a (basen
+            "Wodnik")</p>
+        <p class="white-text text-lighten-4">email: zgierskoleczyckiewopr@gmail.com
+        </p>
+        <p class="white-text text-lighten-4">tel.794 303 333</p>
+
+        
+        
+        
+        <div class=" w-full p-2 bg-gray-600 text-center">
+            © 2024 Copyright Text
+        </div>
+
+    </footer>
+    </div>
+    <script src="js/mail.js"></script>
+</body>
+
+</html>
